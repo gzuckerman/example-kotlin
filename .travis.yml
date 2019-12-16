@@ -1,4 +1,6 @@
 language: java
 sudo: false
+before_install:
+ - chmod +x gradlew
 after_success:
   - bash <(curl -s https://codecov.io/bash)
